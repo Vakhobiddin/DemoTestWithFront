@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Second.css">
+    <title>Add students</title>
+
+  <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="col-5 p-5 m-3 border">
+        <div class="text-center">
+            <div id="inputValue">
+                <input  placeholder="name" id="name" class="p-2 m-2">
+                <br>
+                <input placeholder="lastName" id="lastName" class="p-2 m-2">
+                <br>
+                <input placeholder="age" id="age" class="p-2 m-2">
+                <br>
+                <button onclick="addStudent()" class=" btn btn-success p-1 mt-2">Add student</button>
+                <a th:href="@{/save}" class="btn btn-danger mt-2">Back to Menu</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script th:inline="javascript" th:src="@{/js/secondApi.js}" src="../static/js/secondApi.js"> </script>
+<!--    <script  src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"-->
+<!--            integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="-->
+<!--            crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
